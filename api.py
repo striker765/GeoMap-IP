@@ -9,7 +9,7 @@ CHAVE_API_MAPBOX = 'pk.eyJ1IjoiYm9zY29ib3NjbyIsImEiOiJjbTBoaTAxZmowYmUwMnFvOGxmN
 app = Flask(__name__)
 
 def obter_localizacao_por_ip(ip):
-    url = f'http://ip-api.com/json/{ip}'
+    url = f'https://ip-api.com/json/{ip}'
     try:
         resposta = requests.get(url)
         resposta.raise_for_status()  # Verifica se a resposta é 200
